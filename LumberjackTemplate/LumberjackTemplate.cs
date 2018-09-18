@@ -133,6 +133,7 @@ namespace LumberjackTemplate
                     if (frameReceivedCount >= windowSize)
                     {
                         sendAck(sr, lastFrameToAck);
+                        frameReceivedCount = 0;
 
                         Console.WriteLine("ack sent");
                     }
